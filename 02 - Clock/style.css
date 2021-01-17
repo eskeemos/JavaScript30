@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+body{
+    margin: 0;
+    background-image: url("./bodyBack.jpg");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 350px;
+    height: 350px;
+    margin-bottom: 10vh;
+    border-radius: 50%;
+    border: 20px solid white;
+    box-shadow: 0 0 15px 15px rgb(37, 37, 34);
+    position: relative;
+}
+.hand{
+    width: 50%;
+    position: absolute;
+    top: calc(50% - .25rem);
+    transform-origin: 100%;
+    background-color: black;
+    width: 45%;
+    left: 5%;
+    border-radius: 10px 0 0 10px;
+    transition: .5s all ease-in-out;
+}
+.seco{
+    height: .25rem;
+}
+.minu{
+    height: .5rem;
+}
+.hour{
+    height: .75rem;
+}
+.dot{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border: 5px solid black;
+}
+.digit-clock{
+    position: absolute;
+    top: 2%;
+    font-size: 75px;
+    font-family: 'Balsamiq Sans', cursive;
+}
