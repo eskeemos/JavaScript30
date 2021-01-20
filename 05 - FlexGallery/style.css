@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    margin: 0;
+}
+.panels{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.panel{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    transition: 800ms flex cubic-bezier(0.56, -0.70, 0.18, 1.18);
+    color: rgb(0, 255, 115);
+}
+.panel > *{
+    transition: 150ms transform cubic-bezier(0.56, -0.70, 0.18, 1.18);
+}
+.panel > *:first-child{transform: translateY(-200px)}
+.panel.active > *:first-child{transform: translateY(0)}
+.panel > *:last-child{transform: translateY(200px)}
+.panel.active > *:last-child{transform: translateY(0)}
+.open{
+    flex: 5;
+}
+.p1{background: url("./img/p1.jpg") center/cover;}
+.p2{background: url("./img/p2.jpg") center/cover;}
+.p3{background: url("./img/p3.jpg") center/cover;}
+.p4{background: url("./img/p4.jpg") center/cover;}
+.p5{background: url("./img/p5.jpg") center/cover;}
