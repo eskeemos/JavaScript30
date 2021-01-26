@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+*{margin: 0;padding: 0;border: 0;outline: none;box-sizing: border-box;border-radius: 0}
+body{
+    background-image: linear-gradient(blueviolet,purple);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20vh;
+}
+.player{
+    width: 640px;
+    height: 358px;
+    background-color:yellow;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    outline: 25px solid rgba(128, 128, 128, 0.5);
+}
+.player:hover .controls{
+    transform: translateY(0);
+}
+.player:hover .progress{
+    height: 15px;
+}
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transform: translateY(100%) translateY(-5px);
+    transition: 300ms all ease-out;
+}
+.controls > *{
+    flex: 1;
+}
+.progress{
+    display: flex;
+    flex-basis: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 5px;
+    width: 100%;
+    transition: 250ms height ease-out;
+    cursor: ew-resize;
+}
+.progress-filled{
+    background-color: rgb(0, 255, 255);
+    flex-basis: 100%;
+}
+button{
+    font-family: 'Hammersmith One', sans-serif;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    max-width: 60px;
+    padding: 7px;
+}
+input[type="range"]{
+    appearance: none;
+    background: transparent;
+    width: 100%;
+    margin: 7px 15px;
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-runnable-track{
+    background-color: white;
+    height: 7px;
+}
+input[type=range]::-webkit-slider-thumb{
+    appearance: none;
+    height: 20px;
+    width: 7.5px;
+    margin-top: -6.3px;
+    background-color:rgb(0, 255, 255);
+    box-shadow: 0 0 5px black;
+}
