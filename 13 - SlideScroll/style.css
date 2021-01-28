@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{margin: 0;}
+body{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.site-wrap{
+    margin: 7.5vh 0;
+    max-width: 700px;
+    background-color: rgb(97, 152, 173);
+    color: white;
+    padding: 50px;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.5);
+}
+p{
+    font-size: 19px;
+    line-height: 1.4;
+    margin-top: 25px;
+}
+p::first-letter{
+    font-size: 27px;
+    color: rgb(45, 1, 54);
+    font-weight: bold;
+}
+img{
+    transition: 
+        1s opacity ease-out,
+        .75s transform ease-out;
+    border: 15px groove white;
+}
+.left{
+    float: left;
+    margin: 20px 30px 15px 0;
+}
+.right{
+    float: right;
+    margin: 20px 0 15px 30px;
+}
+.right.slide-in{       transform: scale(.8) translateX(10vh); opacity: 0;}
+.right.slide-in.active{transform: scale(1) translateX(0);     opacity: 1;}
+.left.slide-in{        transform: scale(.8) translateX(-10vh);opacity: 0;}
+.left.slide-in.active{ transform: scale(1) translateX(0);     opacity: 1;}
