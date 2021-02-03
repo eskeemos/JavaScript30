@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Camera</title>
+</head>
+<body>
+
+    <main>
+        <div class="video-cont">
+            <canvas class="big-camera"></canvas>
+            <video class="small-camera"></video>
+        </div>
+    </main>
+    <aside>
+        <button id="photoMaker">Take a Photo!</button>
+        <div class="blue">
+            <label for="bmin">Blue shading</label>
+            <input name="bmin" type="range" min="0" max="255">
+        </div>
+        <div class="green">
+            <label for="gmin">Green shading</label>
+            <input name="gmin" type="range" min="0" max="255">
+        </div>
+        <div class="red">
+            <label for="rmin">Red shading</label>
+            <input name="rmin" type="range" min="0" max="255">
+        </div>
+    </aside>
+    <section class="photoContainer"></section>
+
+    <audio src="./snap.mp3" id="sound"></audio>
+
+    <script src="./script.js"></script>
+</body>
+</html>
