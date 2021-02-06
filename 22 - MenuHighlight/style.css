@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&family=Sriracha&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top,silver,rgb(70, 116, 163));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 5vh;
+}
+li{
+    margin: 15px;
+    border-radius: 25px;
+    padding: 10px 25px;
+    background: rgba(0, 0, 0, 0.205);
+    font-size: 25px;
+    font-family: 'Sriracha', cursive;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+}
+.content{
+    margin-top: 15vh;
+    max-width: 750px;
+    width: 100%;
+    padding: 50px;
+}
+.content a{
+    padding: 3px 8px;
+    background: rgba(0, 0, 0, 0.205);
+}
+p{
+    line-height: 1.6em;
+    font-family: 'Sora', sans-serif;
+    text-align: justify;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.marked{
+    transition: 150ms all ease-in-out;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 25px;
+    display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    content: "s";
+}
