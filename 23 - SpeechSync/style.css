@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+*{
+    margin: 0;border: 0;outline: none;border-radius: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Giga', sans-serif;
+
+    background-image:
+        radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+        radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+}
+.container{
+    margin-top: 10vh;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.50);
+    background-color: rgb(200, 200, 200);
+    border-radius: 25px;
+}
+.header{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 4px solid rgba(128, 128, 128, 0.329);
+    font-weight: bold;
+    font-size: 20px;
+}
+.manages{
+    border-top: 4px solid rgba(128, 128, 128, 0.329);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+button{
+    cursor: pointer;
+    background-color: turquoise;
+    font-family: 'Lexend Giga', sans-serif;
+    padding: 5px 25px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+.controls{
+    padding: 20px 50px;
+}
+select{
+    width: 100%;
+}
+.controls > *{
+    font-family: 'Lexend Giga', sans-serif;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(8, 7, 7, 0.363);
+}
+textarea{
+    height: 130px;
+    text-align: justify;
+    resize: vertical;
+    width: calc(100% - 24px);
+}
+input[type=range]{
+    width: 100%;
+}
+div[class^="speak"]{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
