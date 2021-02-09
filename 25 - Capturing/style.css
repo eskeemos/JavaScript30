@@ -1,0 +1,40 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: rgb(203, 206, 168);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    border: 2.5px solid black;
+}
+div[class^="one"]{
+    background-color: lightblue;
+    width: 25vw;
+    max-width: 300px;
+    height: 25vh;
+    max-height: 300px;
+}
+div[class^="two"]{
+    background-color: lightseagreen;
+    width: 20vw;
+    max-width: 200px;
+    height: 20vh;
+    max-height: 200px;
+    border-width: 0 2px 2px 0;
+}
+div[class^="three"]{
+    background-color: blue;
+    width: 15vw;
+    max-width: 100px;
+    height: 15vh;
+    max-height: 100px;
+    border-width: 0 2px 2px 0;
+}
