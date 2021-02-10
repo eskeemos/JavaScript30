@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(17, 170, 221),white);
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.ddbg{
+    height: 100px;
+    position: absolute;
+    background-image: linear-gradient(rgb(255, 188, 87) 30%,whitesmoke);
+    transition: all 0.3s, opacity 0.1s, transform 0.2s;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+    top: 20px;
+}
+.triangle{
+    position: absolute;
+    background-color: rgb(255, 188, 87);
+    width: 25px;
+    height: 25px;
+    transform: translateY(-50%) rotate(45deg);
+}
+nav{
+    position: relative;
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.main-list > li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    margin: 25px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: silver;
+    border: 2px solid black;
+}
+.main-list > li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.dd{
+    position: absolute;
+    transform: translateY(100px);
+    transition: all 0.5s;
+    text-align: justify;
+    opacity: 0;
+    display: none;
+    font-size: 20px;
+    padding: 50px 50px 20px 50px;
+}
+.active-f1 .dd{
+    display: block;
+}
+.active-f1.f2 .dd{
+    opacity: 1;
+}
+.ddbg.f3{
+    opacity: 1;
+}
+.dd1{
+    width: 50vw;
+    max-width: 400px;
+}
+.dd2{
+    width: 50vw;
+    max-width: 220px;
+    text-align: center;
+}
+ol{
+    list-style-type: none;
+}
+ol > li{
+    border-bottom: 1px solid gray;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social > a{
+    width: 100%;
+    text-align: center;
+}
